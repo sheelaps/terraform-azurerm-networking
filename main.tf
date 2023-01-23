@@ -16,7 +16,7 @@ resource "azurerm_virtual_network" "module" {
     environment = "dev"
   }
 }
-#test
+#test1
 resource "azurerm_subnet" "module" {
   name                 = "${local.module_name}-subnet${count.index}"
   count                = length(var.subnet_address_prefixes)
